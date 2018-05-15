@@ -6,10 +6,12 @@
   "repository": "https://github.com/projectpixelpress/node-write-env-file.git",
   "author": "Evan <evan@projectpixelpress.com>",
   "scripts": {
+    "lint": "eslint '**/*.js'",
     "test": "ava ./test"
   },
   "license": "MIT",
   "devDependencies": {
-    "ava": "^0.25.0"
+    "ava": "^0.25.0",
+    "eslint": "^4.19.1"
   }
 }
