@@ -1,0 +1,15 @@
+{
+  "name": "node-write-env-file",
+  "version": "1.0.0",
+  "description": "A bridge to send backend variables to the frontend in a simple server",
+  "main": "index.js",
+  "repository": "https://github.com/projectpixelpress/node-write-env-file.git",
+  "author": "Evan <evan@projectpixelpress.com>",
+  "scripts": {
+    "test": "ava ./test"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.25.0"
+  }
+}
