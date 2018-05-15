@@ -1,0 +1,134 @@
+{
+	"parserOptions": {
+		"ecmaVersion": 2017,
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+
+	"env": {
+		"es6": true,
+		"node": true,
+		"browser": true
+	},
+
+	"globals": {
+		"document": false,
+		"navigator": false,
+		"window": false
+	},
+	"rules": {
+		"indent": ["error", "tab"],
+		"accessor-pairs": "error",
+		"arrow-spacing": ["error", {
+			"before": true,
+			"after": true
+		}],
+		"block-spacing": [
+			"error",
+			"always"
+		],
+		"brace-style": [
+			"error",
+			"1tbs",
+			{
+				"allowSingleLine": true
+			}
+		],
+		"comma-dangle": [
+			"error",
+			{
+				"arrays": "never",
+				"objects": "never",
+				"imports": "never",
+				"exports": "never",
+				"functions": "never"
+			}
+		],
+		"comma-spacing": [
+			"error",
+			{
+				"before": false,
+				"after": true
+			}
+		],
+		"comma-style": [
+			"error",
+			"last"
+		],
+		"eqeqeq": [
+			"error",
+			"always",
+			{
+				"null": "ignore"
+			}
+		],
+		"func-call-spacing": [
+			"error",
+			"never"
+		],
+		"no-mixed-spaces-and-tabs": "error",
+		"no-multi-spaces": "error",
+		"no-multi-str": "error",
+		"no-unused-vars": ["error", {
+			"vars": "all",
+			"args": "after-used",
+			"ignoreRestSiblings": false
+		}],
+		"no-use-before-define": [
+			"error",
+			{
+				"functions": false,
+				"classes": false,
+				"variables": false
+			}
+		],
+		"no-useless-call": "error",
+		"no-useless-computed-key": "error",
+		"no-useless-escape": "error",
+		"no-useless-rename": "error",
+		"no-useless-return": "error",
+		"no-whitespace-before-property": "error",
+		"no-with": "error",
+		"object-property-newline": [
+			"error",
+			{
+				"allowMultiplePropertiesPerLine": true
+			}
+		],
+		"one-var": [
+			"error",
+			{
+				"initialized": "never"
+			}
+		],
+		"operator-linebreak": [
+			"error",
+			"after",
+			{
+				"overrides": {
+					"?": "before",
+					":": "before"
+				}
+			}
+		],
+		"padded-blocks": [
+			"error",
+			{
+				"blocks": "never",
+				"switches": "never",
+				"classes": "never"
+			}
+		],
+		"quotes": [
+			"error",
+			"single",
+			{
+				"avoidEscape": true,
+				"allowTemplateLiterals": true
+			}
+		]
+	}
+}
