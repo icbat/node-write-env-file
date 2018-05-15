@@ -7,7 +7,7 @@ test('writeEnvFile writes to the right place', t => {
 	const destination = 'generated';
 	t.is(Object.keys(fs.spy).length, 0, 'precondition failed - spy object had stuff on it');
 
-	writeEnvFile(fs)(destination, 'my url');
+	writeEnvFile(fs)(destination, 'env.js', 'my url');
 
 	t.is(fs.spy.file, `${destination}/env.js`);
 });
@@ -20,7 +20,7 @@ test('writeEnvFile writes JSON with the socket server url', t => {
 	const input = {};
 	input[expectedKey] = expectedValue;
 
-	writeEnvFile(fs)('', input);
+	writeEnvFile(fs)('', '', input);
 
 	const fileContents = fs.spy.data;
 	const parts = fileContents.split('=');
