@@ -29,7 +29,7 @@ test('writeEnvFile writes JSON with the socket server url', t => {
 	const parsed = JSON.parse(data);
 
 	t.is(parsed[expectedKey], expectedValue);
-	t.is(scriptification, 'var env ');
+	t.is(scriptification, 'window.env ');
 });
 
 test('writeEnvFile creates directory if needed', t => {
